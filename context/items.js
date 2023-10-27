@@ -49,7 +49,7 @@ const ItemsProvider = ({ children }) => {
 		try {
 			// we will send a DELETE request to the API with the id of item we want to delete
 			const res = await fetch('/api/deleteItem', {
-				method: 'Delete',
+				method: 'DELETE',
 				body: JSON.stringify({ id }),
 				headers: { 'Content-Type': 'application/json' },
 			})
